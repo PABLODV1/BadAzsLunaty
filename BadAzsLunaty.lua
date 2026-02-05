@@ -84,9 +84,68 @@ function BadAzs_PallyHeal()
     CastSpellByName("Holy Light(Rank 1)")
 end
 
+-- =====================================
+-- LUNATY - HUNTER MODULE
+-- =====================================
+
+function BadAzs_HunterStartAttack()
+    if BadAzs_StartAttack then
+        BadAzs_StartAttack()
+    else
+        CastSpellByName("Attack")
+    end
+end
+
+function BadAzs_TargetInMelee()
+    if not UnitExists("target") then return false end
+    return CheckInteractDistance("target", 3) == 1
+end
+
+function BadAzs_HunterRanged()
+    BadAzs_HunterStartAttack()
+    CastSpellByName("Auto Shot")
+end
+
+function BadAzs_HunterMelee()
+    -- Cancela Auto Shot / ranged
+    SpellStopCasting()
+
+    -- Garante auto-attack melee
+    if BadAzs_StartAttack then
+        BadAzs_StartAttack()
+    else
+        CastSpellByName("Attack")
+    end
+
+    -- Raptor Strike (Vanilla-safe)
+    local start, duration = GetSpellCooldown("Raptor Strike")
+    if start == 0 then
+        CastSpellByName("Raptor Strike")
+    end
+end
+
+function BadAzs_HunterCombat()
+    if not UnitExists("target") then return end
+    if not UnitCanAttack("player","target") then return end
+
+    -- Melee
+    if BadAzs_TargetInMelee() then
+        BadAzs_HunterMelee()
+        return
+    end
+
+    -- Ranged
+    BadAzs_HunterRanged()
+end
+
+
+
 -- Novos Comandos de Chat
 SLASH_BADSEAL1 = "/badseal"
 SlashCmdList["BADSEAL"] = BadAzs_PallySeal
 
 SLASH_BADHEAL1 = "/badheal"
 SlashCmdList["BADHEAL"] = BadAzs_PallyHeal
+
+SLASH_BADHUNTER1 = "/badhunter"
+SlashCmdList["BADHUNTER"] = BadAzs_HunterCombat
